@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Getter</title>
+
+    <link rel="stylesheet"
+      href="{{ url_for('static',
+      filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Image Getter</h1>
+
+        <div class="input-box">
+            <input type="text"
+                   id="prompt"
+                   placeholder="Enter image description...">
+
+            <button onclick="generateImage()">
+                Get Image   
+            </button>
+        </div>
+
+        <p id="status"></p>
+
+        <div class="image-box">
+            <img id="generatedImage"
+                 src=""
+                 alt="Generated Image">
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    
+
+</body>
+</html>
